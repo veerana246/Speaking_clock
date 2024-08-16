@@ -31,7 +31,7 @@ Maven (version 3.6.0 or above)
 Build the Project
 Clone the repository:
 
-git clone https://github.com/veerana246/speaking-clock.git
+git clone https://github.com/veerana246/speaking_clock.git
 cd speaking-clock
 Build the project using Maven:
 
