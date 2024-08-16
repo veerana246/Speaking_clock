@@ -1,0 +1,5 @@
+com\wisdom\speaking_clock\controller\TimeControllerTest.class
+com\wisdom\speaking_clock\SpeakingClockApplicationTests.class
+com\wisdom\speaking_clock\exception\InvalidTimeFormatExceptionTest.class
+com\wisdom\speaking_clock\config\SwaggerConfigTest.class
+com\wisdom\speaking_clock\service\SpeakingClockServiceTest.class
