@@ -44,7 +44,7 @@ public class GlobalExceptionHandlerTest {
 		// This should match the controller method that would throw
 		// DateTimeParseException
 		mockMvc.perform(get("/api/time/convert").param("time", invalidTime)).andExpect(status().isBadRequest())
-				.andExpect(content().string("Invalid time format. Please use the HH:mm format."));
+				.andExpect(content().string("The entered time is invalid. It should be in 24-hour format (HH:mm)."));
 	}
 
 	@Test
@@ -57,6 +57,6 @@ public class GlobalExceptionHandlerTest {
 
 		// This should match the controller method that calls the service
 		mockMvc.perform(get("/api/time/convert").param("time", "invalid")).andExpect(status().isBadRequest())
-				.andExpect(content().string("Invalid time format. Please use the HH:mm format."));
+				.andExpect(content().string("The entered time is invalid. It should be in 24-hour format (HH:mm)."));
 	}
 }

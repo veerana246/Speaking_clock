@@ -55,13 +55,13 @@ public class TimeControllerTest {
 
         mockMvc.perform(get("/api/time/convert").param("time", invalidTime))
                 .andExpect(status().isBadRequest())
-                .andExpect(content().string("Invalid time format. Please use the HH:mm format."));
+                .andExpect(content().string("The entered time is invalid. It should be in 24-hour format (HH:mm)."));
     }
 
     @Test
     public void testEmptyTime() throws Exception {
         mockMvc.perform(get("/api/time/convert").param("time", ""))
                 .andExpect(status().isBadRequest())
-                .andExpect(content().string("Invalid time format. Please use the HH:mm format."));
+                .andExpect(content().string("The entered time is invalid. It should be in 24-hour format (HH:mm)."));
     }
 }
