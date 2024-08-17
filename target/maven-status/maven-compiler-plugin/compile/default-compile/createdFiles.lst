@@ -1,6 +1,0 @@
-com\wisdom\speaking_clock\service\SpeakingClockService.class
-com\wisdom\speaking_clock\SpeakingClockApplication.class
-com\wisdom\speaking_clock\exception\GlobalExceptionHandler.class
-com\wisdom\speaking_clock\controller\TimeController.class
-com\wisdom\speaking_clock\exception\InvalidTimeFormatException.class
-com\wisdom\speaking_clock\config\SwaggerConfig.class

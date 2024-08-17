@@ -27,9 +27,9 @@ public class SpeakingClockService {
             "fifty six", "fifty seven", "fifty eight", "fifty nine"
     };
 
-    public String convertTimeToWords(LocalTime time) {
-        int hour = time.getHour();
-        int minute = time.getMinute();
+    public String convertTimeToWords(LocalTime inputTime) {
+        int hour = inputTime.getHour();
+        int minute = inputTime.getMinute();
 
         if (hour == 12 && minute == 0) {
             return "It's Midday";
