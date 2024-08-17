@@ -33,7 +33,7 @@ public class TimeController {
             String timeInWords = speakingClockService.convertTimeToWords(inputTime);
             return ResponseEntity.ok(timeInWords);
         } catch (DateTimeParseException ex) {
-            throw new InvalidTimeFormatException("Invalid time format. Please use the HH:mm format.");
+            throw new InvalidTimeFormatException("The entered time is invalid. It should be in 24-hour format (HH:mm).");
         }
     }
 }
